@@ -74,7 +74,7 @@ function App() {
     setAnimate(false);
 
     try {
-      let url = 'http://192.168.1.9:5000/api/activity';
+      let url = 'http://localhost:5000/api/activity';
       const params = {};
 
       if (timeFrame !== 'all') {
