@@ -16,7 +16,8 @@ app.use("/api/activity", activityRouter);
 
 const PORT = process.env.PORT || 5000;
 const MONGO_URI =
-  process.env.MONGO_URI || "mongodb://localhost:27017/leaderboard";
+  process.env.MONGO_URI ||
+  "mongodb+srv://user1:user1@cluster0.1vpdl.mongodb.net/leaderboard?retryWrites=true&w=majority";
 
 mongoose
   .connect(MONGO_URI, {
